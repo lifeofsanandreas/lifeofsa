@@ -1,0 +1,35 @@
+//TextDraw developed using Zamaroht's in-game TextDraw system
+ 
+//On top of script:
+new Text:Textdraw0;
+new Text:AutoZustandDraw[playerid];
+ 
+//In OnGameModeInit or any other place, we procced to create our textdraw:
+Textdraw0anzeigehehe = TextDrawCreate(477.000000,356.000000,"__");
+ = TextDrawCreate(478.000000,357.000000,"Eigentum: Stadt~n~~n~Sprit: 50.0/60.0 L (Diesel)~n~KM Stand: 50 km~n~Zustand: 100~n~Geschwindigkeit: 50 km/h");
+TextDrawUseBox(Textdraw0anzeigehehe,1);
+TextDrawBoxColor(Textdraw0anzeigehehe,0x00000033);
+TextDrawTextSize(Textdraw0anzeigehehe,582.000000,84.000000);
+TextDrawUseBox(,1);
+TextDrawBoxColor(,0x00000033);
+TextDrawTextSize(,581.000000,619.000000);
+TextDrawAlignment(Textdraw0anzeigehehe,0);
+TextDrawAlignment(,0);
+TextDrawBackgroundColor(Textdraw0anzeigehehe,0x000000ff);
+TextDrawBackgroundColor(,0xffffff00);
+TextDrawFont(Textdraw0anzeigehehe,3);
+TextDrawLetterSize(Textdraw0anzeigehehe,1.000000,6.299999);
+TextDrawFont(,1);
+TextDrawLetterSize(,0.199999,1.000000);
+TextDrawColor(Textdraw0anzeigehehe,0x00000000);
+TextDrawColor(,0xffffffff);
+TextDrawSetOutline(Textdraw0anzeigehehe,1);
+TextDrawSetOutline(,1);
+TextDrawSetProportional(Textdraw0anzeigehehe,1);
+TextDrawSetProportional(,1);
+TextDrawSetShadow(Textdraw0anzeigehehe,1);
+ 
+//You can now use TextDrawShowForPlayer(-ForAll), TextDrawHideForPlayer(-ForAll) and
+//TextDrawDestroy functions to show, hide, and destroy the textdraw.
+ 
+ 
